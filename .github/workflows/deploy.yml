@@ -3,8 +3,7 @@ name: Deploy Jekyll Site to GitHub Pages
 on:
   push:
     branches:
-      - main  # Adjust this to the branch where you develop (default: 
-'main')
+      - main  # Adjust this to the branch where you develop (default: 'main')
 
 jobs:
   build:
@@ -19,7 +18,7 @@ jobs:
       - name: Setup Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.3.5  # Adjust the Ruby version if necessary
+          ruby-version: '3.3.5'  # Adjust the Ruby version if necessary
 
       # Step 3: Install Jekyll and Bundler
       - name: Install dependencies
@@ -37,4 +36,3 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./_site
-
