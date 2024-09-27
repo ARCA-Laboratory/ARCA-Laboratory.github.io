@@ -30,7 +30,11 @@ jobs:
       - name: Build site
         run: bundle exec jekyll build
 
-      # Step 5: Deploy the _site directory to gh-pages branch
+      # Step 5: Copy CNAME file to _site directory
+      - name: Copy CNAME file
+        run: cp CNAME _site/CNAME
+
+      # Step 6: Deploy the _site directory to gh-pages branch
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
