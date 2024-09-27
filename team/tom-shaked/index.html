@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>Tom Shaked - ARCA Lab</title>
+
+
+  <meta name="description" content="Dr. Shaked leads our research endeavors in construction robotics."/>
+
+
+
+    <meta property="og:type" content="website"/>
+<meta property="og:url" content="https://arcalab.info/team/tom-shaked/"/>
+
+
+  <meta property="og:title" content="Tom Shaked"/>
+
+
+
+  <meta property="og:description" content="Dr. Shaked leads our research endeavors in construction robotics."/>
+
+
+
+  <meta property="og:image" content="https://arcalab.info/assets/images/team/tom-shaked.jpg"/>
+
+
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:site" content="@zerostaticio" />
+<meta name="twitter:creator" content="@zerostaticio" />
+    <link rel="alternate" type="application/atom+xml" title="ARCA Lab" href="/feed.xml">
+    <link rel="icon" href="/assets/images/favicon/favicon.png">
+
+
+    <link href="/assets/css/main.css" rel="stylesheet">
+
+    
+      <script>
+          localStorage.getItem('darkMode') === 'true' && document.documentElement.setAttribute('data-mode', 'dark');
+      </script>
+    
+
+    
+      <!-- https://github.com/orestbida/cookieconsent -->
+
+<link rel="stylesheet" href="/assets/css/cookieconsent.css">
+<script defer src="/assets/js/cookieconsent.js"></script>
+
+<!-- Inline script -->
+<script>
+    window.addEventListener('load', function () {
+
+        // obtain plugin
+        var cc = initCookieConsent();
+
+        // run plugin with your configuration
+        cc.run({
+            current_lang: 'en',
+            autoclear_cookies: true,                   // default: false
+            page_scripts: true,                        // default: false
+
+            // mode: 'opt-in'                          // default: 'opt-in'; value: 'opt-in' or 'opt-out'
+            // delay: 0,                               // default: 0
+            // auto_language: '',                      // default: null; could also be 'browser' or 'document'
+            // autorun: true,                          // default: true
+            // force_consent: false,                   // default: false
+            // hide_from_bots: true,                   // default: true
+            // remove_cookie_tables: false             // default: false
+            // cookie_name: 'cc_cookie',               // default: 'cc_cookie'
+            // cookie_expiration: 182,                 // default: 182 (days)
+            // cookie_necessary_only_expiration: 182   // default: disabled
+            // cookie_domain: location.hostname,       // default: current domain
+            // cookie_path: '/',                       // default: root
+            // cookie_same_site: 'Lax',                // default: 'Lax'
+            // use_rfc_cookie: false,                  // default: false
+            // revision: 0,                            // default: 0
+
+            onFirstAction: function (user_preferences, cookie) {
+                // callback triggered only once on the first accept/reject action
+            },
+
+            onAccept: function (cookie) {
+                // callback triggered on the first accept/reject action, and after each page load
+            },
+
+            onChange: function (cookie, changed_preferences) { 
+                // If analytics category is disabled => disable google analytics 
+                if (!cc.allowedCategory('analytics')) { 
+                    typeof gtag === 'function' && gtag('consent', 'update', { 
+                        'analytics_storage': 'denied' 
+                    }); 
+                } 
+            }, 
+
+            languages: {
+                'en': {
+                    consent_modal: {
+                        title: 'We use cookies!',
+                        description: 'Hi, this website uses essential cookies to ensure its proper operation and tracking cookies to understand how you interact with it. The latter will be set only after consent. <button type="button" data-cc="c-settings" class="cc-link">Let me choose</button>',
+                        primary_btn: {
+                            text: 'Accept all',
+                            role: 'accept_all'              // 'accept_selected' or 'accept_all'
+                        },
+                        secondary_btn: {
+                            text: 'Reject all',
+                            role: 'accept_necessary'        // 'settings' or 'accept_necessary'
+                        }
+                    },
+                    settings_modal: {
+                        title: 'Cookie preferences',
+                        save_settings_btn: 'Save settings',
+                        accept_all_btn: 'Accept all',
+                        reject_all_btn: 'Reject all',
+                        close_btn_label: 'Close',
+                        // cookie_table_caption: 'Cookie list',
+                        cookie_table_headers: [
+                            { col1: 'Name' },
+                            { col2: 'Domain' },
+                            { col3: 'Expiration' },
+                            { col4: 'Description' }
+                        ],
+                        blocks: [
+                            {
+                                title: 'Cookie usage 📢',
+                                description: 'I use cookies to ensure the basic functionalities of the website and to enhance your online experience. You can choose for each category to opt-in/out whenever you want. For more details relative to cookies and other sensitive data, please read the full <a href="#" class="cc-link">privacy policy</a>.'
+                            }, {
+                                title: 'Strictly necessary cookies',
+                                description: 'These cookies are essential for the proper functioning of my website. Without these cookies, the website would not work properly',
+                                toggle: {
+                                    value: 'necessary',
+                                    enabled: true,
+                                    readonly: true          // cookie categories with readonly=true are all treated as "necessary cookies"
+                                }
+                            }, {
+                                title: 'Performance and Analytics cookies',
+                                description: 'These cookies allow the website to remember the choices you have made in the past',
+                                toggle: {
+                                    value: 'analytics',     // your cookie category
+                                    enabled: false,
+                                    readonly: false
+                                },
+                                cookie_table: [             // list of all expected cookies
+                                    {
+                                        col1: '^_ga',       // match all cookies starting with "_ga"
+                                        col2: 'google.com',
+                                        col3: '2 years',
+                                        col4: 'description ...',
+                                        is_regex: true
+                                    },
+                                    {
+                                        col1: '_gid',
+                                        col2: 'google.com',
+                                        col3: '1 day',
+                                        col4: 'description ...',
+                                    }
+                                ]
+                            },
+                            {
+                                title: 'More information',
+                                description: 'For any queries in relation to our policy on cookies and your choices, please <a class="cc-link" href="#yourcontactpage">contact us</a>.',
+                            }
+                        ]
+                    }
+                }
+            }
+        });
+    });
+</script>
+    
+
+    
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@800&family=Lato:wght@300;400;700&family=Source+Code+Pro&family=Source+Sans+3:wght@300;400;700&display=swap" rel="stylesheet">
+
+
+    <link href="/assets/css/fonts.css" rel="stylesheet">
+
+
+
+
+    
+
+  </head>
+<body class="page page-team has-static-header">
+
+
+<div class="menu-main-mobile " id="menu-main-mobile">
+  
+  <div class="menu-main-mobile-top">
+    <div id="close-overlay" class="menu-main-close">
+      <div class="hamburger"></div>
+    </div>
+  </div>
+
+  <div class="menu-main-mobile-center">
+    
+      <ul class="menu">
+        
+          <li class="menu-item-home">
+            <a href="/">Home</a>
+          </li>
+        
+          <li class="menu-item-projects">
+            <a href="/projects/">Projects</a>
+          </li>
+        
+          <li class="menu-item-publications">
+            <a href="/publications/">Publications</a>
+          </li>
+        
+          <li class="menu-item-about">
+            <a href="/about/">About</a>
+          </li>
+        
+          <li class="menu-item-team">
+            <a href="/team/">Team</a>
+          </li>
+        
+          <li class="menu-item-contact">
+            <a href="/contact/">Contact</a>
+          </li>
+        
+      </ul>
+    
+  </div>
+
+  <div class="menu-main-mobile-bottom">
+    
+      
+
+<div class="social" id="social">
+  
+  <a href="https://github.com/tomshaked" target="blank" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+  
+  <a href="https://www.instagram.com/tomshaked/" target="blank" title="Instagram">
+    <i class="fab fa-instagram-square"></i>
+  </a>
+  
+  <a href="https://www.linkedin.com/in/tomshaked/" target="blank" title="Linkedin">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  
+</div>
+
+
+    
+    
+      <div class="dark-mode-switcher " id="dark-mode-container">
+  <div class="dark-mode-switch">
+    <svg class="dark-mode-icon-dark" data-name="Layer 1" fill="#000000" height="20px" viewbox="0 0 64 64" width="20px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+      <title>essential</title>
+      <path d="M33.28,58.24A26.95,26.95,0,0,1,24,6l.39-.13a2,2,0,0,1,2.4,2.87,22.42,22.42,0,0,0-1.51,18.75h0A22.47,22.47,0,0,0,54.09,40.8l.76-.3a2,2,0,0,1,2.24.48,2,2,0,0,1,.35,2.24,27,27,0,0,1-24.16,15ZM21.11,11.85a22.94,22.94,0,1,0,30,33.91A26.46,26.46,0,0,1,21.53,28.87h0A26.4,26.4,0,0,1,21.11,11.85Z"></path>
+    </svg>
+    <svg class="dark-mode-icon-light" fill="#000000" height="20px" style="enable-background: new 0 0 100 100;" version="1.1" viewbox="0 0 100 100" width="20px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+      <g>
+        <path d="M50,75c-13.8,0-25-11.2-25-25s11.2-25,25-25s25,11.2,25,25S63.8,75,50,75z M50,33.3c-9.2,0-16.7,7.5-16.7,16.7   c0,9.2,7.5,16.7,16.7,16.7c9.2,0,16.7-7.5,16.7-16.7C66.7,40.8,59.2,33.3,50,33.3z"></path>
+      </g>
+      <g>
+        <path d="M50,100c-2.3,0-4.2-1.9-4.2-4.2v-8.3c0-2.3,1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,98.1,52.3,100,50,100z    M17.5,86.7c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8   C19.6,86.3,18.6,86.7,17.5,86.7z M82.5,86.7c-1.1,0-2.1-0.4-2.9-1.2l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9s4.3-1.6,5.9,0l5.8,5.8   c1.6,1.6,1.6,4.3,0,5.9C84.6,86.3,83.6,86.7,82.5,86.7z M95.8,54.2h-8.3c-2.3,0-4.2-1.9-4.2-4.2c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C100,52.3,98.1,54.2,95.8,54.2z M12.5,54.2H4.2C1.9,54.2,0,52.3,0,50c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C16.7,52.3,14.8,54.2,12.5,54.2z M76.7,27.5c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8   c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8C78.8,27.1,77.7,27.5,76.7,27.5z M23.3,27.5c-1.1,0-2.1-0.4-2.9-1.2   l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9c1.6-1.6,4.3-1.6,5.9,0l5.8,5.8c1.6,1.6,1.6,4.3,0,5.9C25.5,27.1,24.4,27.5,23.3,27.5z M50,16.7   c-2.3,0-4.2-1.9-4.2-4.2V4.2C45.8,1.9,47.7,0,50,0c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,14.8,52.3,16.7,50,16.7z"></path>
+      </g>
+    </svg>
+    <div class="ball"></div>
+  </div>
+</div>
+    
+  </div>
+
+</div>
+
+
+
+
+<div id="header" class='header '>
+  <div class="container">
+    <div class="logos">
+  <div class="logo logo-desktop">
+    
+  
+    
+      <div class="logo-text"><a href="/">ARCA Lab</a></div>
+    
+    
+  </div>
+
+  <div class="logo logo-desktop-invert">
+    
+    
+  
+    
+      <div class="logo-text"><a href="/">ARCA Lab</a></div>
+    
+    
+  </div>
+
+  <div class="logo logo-mobile">
+    
+    
+  
+    
+      <div class="logo-text"><a href="/">ARCA Lab</a></div>
+    
+    
+  </div>
+
+
+  <div class="logo logo-mobile-invert">
+    
+    
+  
+    
+      <div class="logo-text"><a href="/">ARCA Lab</a></div>
+    
+
+  </div>
+
+</div>
+
+
+    <div class="menu-main">
+  <ul>
+    
+      
+        
+        <li class="">
+          <a href="/">Home</a>
+        </li>
+      
+    
+      
+
+        
+        
+
+        <li class="menu-item-dropdown menu-item-Projects ">
+          <a href="/projects/">Projects <i class="fa-solid fa-chevron-down"></i></a>
+          
+          <div class="dropdown-menu">
+            
+              <a href="/projects/collective-robotic-site-preparation/" class="dropdown-item ">
+                
+                
+
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-name">Collective Robotic Site Preparation</div>
+                  
+                </div>
+              </a>
+            
+              <a href="/projects/robotic-additive-manufacturing/" class="dropdown-item ">
+                
+                
+
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-name">Eco-Friendly Robotic Additive Manufacturing</div>
+                  
+                </div>
+              </a>
+            
+              <a href="/projects/human-robot-building-craft-transfer/" class="dropdown-item ">
+                
+                
+
+                <div class="dropdown-item-content">
+                  <div class="dropdown-item-name">Human-robot building craft transfer</div>
+                  
+                </div>
+              </a>
+            
+          </div>
+
+        </li>
+      
+    
+      
+        
+        <li class="">
+          <a href="/publications/">Publications</a>
+        </li>
+      
+    
+      
+        
+        <li class="">
+          <a href="/about/">About</a>
+        </li>
+      
+    
+      
+        
+        <li class="">
+          <a href="/team/">Team</a>
+        </li>
+      
+    
+      
+        
+        <li class="">
+          <a href="/contact/">Contact</a>
+        </li>
+      
+    
+  </ul>
+</div>
+
+    
+    <div class="hamburger-trigger" id="toggle-menu-main-mobile">
+  <button class="hamburger">Menu</button>
+</div>
+  </div>
+</div>
+
+<div id="wrapper" class="wrapper">     
+  
+  <div class="section">
+    <div class="container">
+        
+        
+        
+        
+        
+        
+        
+          <div class="row">
+            
+              <div class="col-12 col-md-6">
+                <div class="team-image">
+                  <img class="img-fluid"  alt="Tom Shaked"  src="/assets/images/team/tom-shaked.jpg"/>
+                </div>
+              </div>
+            
+            <div class="col-12 col-md-6">
+                <div class="team-header">
+                    
+                        <h1>Tom Shaked</h1>
+                    
+                    
+                    
+                        <p>Dr. Shaked leads our research endeavors in construction robotics.</p>
+                    
+
+                    <div class="team-meta">
+                        
+                            <div class="team-jobtitle">Founder/Principal Investigator</div>
+                        
+    
+                        
+                        <div class="team-links">
+                            
+                                
+                                    <a href="https://www.linkedin.com/in/tomshaked/">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="https://www.researchgate.net/profile/Tom-Shaked">
+                                        <i class="fab fa-researchgate"></i>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="mailto:tomsha@ariel.ac.il">
+                                        <i class="fas fa-envelope"></i>
+                                    </a>
+                                
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="content"><p>Tom has a distinguished background in robotics, with numerous research contributions in the field. Dr. Shaked’s leadership inspires our team to push the boundaries of technology while addressing pressing global challenges such as climate change and social needs.</p>
+
+<h1 id="publications">Publications</h1>
+
+<h2 id="journal-papers">Journal Papers</h2>
+
+<ol class="bibliography"><li><span id="elmakis2024breeze">Elmakis, O., Polinov, S., Shaked, T., Gordon, G., &amp; Degani, A. (2024). <a href="https://www.researchgate.net/publication/377614175_OS-BREEZE_Oil_Spills_Boundary_Red_Emission_Zone_Estimation_Using_Unmanned_Surface_Vehicles">OS-BREEZE: Oil Spills Boundary Red Emission Zone Estimation Using Unmanned Surface Vehicles</a>. <i>Sensors</i>, <i>24</i>(2), 703.</span></li>
+<li><span id="10292864">Shaked, T., Bar-Sinai, K. L., Meles-Braverman, A., Elmakis, O., &amp; Degani, A. (2023). <a href="https://www.researchgate.net/publication/374930162_Aggregate-Forming_Planner_for_Autonomous_Earth-moving">Aggregate-Forming Planner for Autonomous Earth-moving</a>. <i>IEEE Access</i>, 1–1. https://doi.org/10.1109/ACCESS.2023.3327112</span></li>
+<li><span id="barinforming">Bar-Sinai, K. L., Shaked, T., &amp; Sprecher, A. <i><a href="https://www.researchgate.net/publication/337945482_Informing_Grounds_A_Theoretical_Framework_and_Iterative_Process_for_Robotic_Groundscaping_of_Remote_Sites">Informing Grounds</a></i>.</span></li>
+<li><span id="barsensibility">Bar-Sinai, K. L., Shaked, T., &amp; Sprecher, A. <i><a href="https://www.researchgate.net/publication/343382170_Sensibility_at_Large_-_A_Post-Anthropocene_Vision_for_Architectural_Landscape_Editing">Sensibility at Large - A Post-Anthropocene Vision for Architectural Landscape Editing</a></i>.</span></li>
+<li><span id="bar2020pedagogical">Bar-Sinai, K. L., Shaked, T., &amp; Sprecher, A. (2020). <a href="https://www.researchgate.net/publication/341710403_A_pedagogical_protocol_for_iterative_robotic_fabrication_on_remote_grounds">A pedagogical protocol for iterative robotic fabrication on remote grounds</a>. <i>Archnet-IJAR: International Journal of Architectural Research</i>, <i>14</i>(3), 453–468.</span></li>
+<li><span id="bar2019northern">Bar-Sinai, K. L., &amp; Shaked, T. (2019). <a href="https://www.researchgate.net/publication/335229809_Northern_Polarities_Canadian_Subarctic_Impression">Northern Polarities: Canadian Subarctic Impression</a>. <i>Journal of Architectural Education</i>, <i>73</i>(1), 100–101.</span></li>
+<li><span id="shaked2020craft">Shaked, T., Bar-Sinai, K. L., &amp; Sprecher, A. (2020). <a href="https://www.researchgate.net/publication/345455092_Craft_to_site_Middleware_for_in_situ_robotic_stonework">Craft to site: Middleware for in situ robotic stonework</a>. <i>Construction Robotics</i>, <i>4</i>, 141–150.</span></li>
+<li><span id="bar2021robotic">Bar-Sinai, K. L., Shaked, T., &amp; Sprecher, A. (2021). <a href="https://www.researchgate.net/publication/349989665_Robotic_tools_native_matter_workflow_and_methods_for_geomaterial_reconstitution_using_additive_manufacturing">Robotic tools, native matter: workflow and methods for geomaterial reconstitution using additive manufacturing</a>. <i>Architectural Science Review</i>, <i>64</i>(6), 490–503.</span></li>
+<li><span id="shaked2021adaptive">Shaked, T., Bar-Sinai, K. L., &amp; Sprecher, A. (2021). <a href="https://www.researchgate.net/publication/352681602_Adaptive_robotic_stone_carving_Method_tools_and_experiments">Adaptive robotic stone carving: Method, tools, and experiments</a>. <i>Automation in Construction</i>, <i>129</i>, 103809.</span></li>
+<li><span id="shakedhuman">Shaked, T., Bar-Sinaia, K. L., &amp; Sprecher, A. <i><a href="https://www.researchgate.net/publication/354934796_Human_Sensibility_Robotic_Craft_Toward_Autonomous_Stonework">Human Sensibility, Robotic Craft: Toward Autonomous Stonework</a></i>.</span></li>
+<li><span id="elmakis2022vision">Elmakis, O., Shaked, T., &amp; Degani, A. (2022). <a href="https://www.researchgate.net/publication/360192685_Vision-Based_UAV-UGV_Collaboration_for_Autonomous_Construction_Site_Preparation">Vision-based UAV-UGV collaboration for autonomous construction site preparation</a>. <i>IEEE Access</i>, <i>10</i>, 51209–51220.</span></li>
+<li><span id="elmakis2022breeze">Elmakis, O., Shaked, T., Fishbain, B., &amp; Degani, A. (2022). <a href="https://www.researchgate.net/publication/362207406_BREEZE-Boundary_Red_Emission_Zone_Estimation_Using_Unmanned_Aerial_Vehicles">BREEZE—Boundary Red Emission Zone Estimation Using Unmanned Aerial Vehicles</a>. <i>Sensors</i>, <i>22</i>(14), 5460.</span></li>
+<li><span id="shakedfabrication">Shaked, T., &amp; Degani, A. <i><a href="https://www.researchgate.net/publication/366517166_Shepherd_A_fabrication-oriented_tool_for_simulation_and_control_of_mobile_robotic_platforms_for_collaborative_earthworks">Shepherd: A fabrication-oriented tool for simulation and control of mobile robotic platforms for collaborative earthworks</a></i>.</span></li>
+<li><span id="bar2023embedding">Bar-Sinai, K. L., Shaked, T., Fettahoglu, E. S., Krimm, J., &amp; Boucsein, B. (2023). <a href="https://www.researchgate.net/publication/366878235_Embedding_Acoustic_Analysis_in_Landscape_Architecture_Design_Processes_A_Case_Study_of_Munich_Airport">Embedding Acoustic Analysis in Landscape Architecture Design Processes: A Case Study of Munich Airport</a>. <i>Buildings</i>, <i>13</i>(1), 143.</span></li>
+<li><span id="elmakis4446613breeze">Elmakis, O., Polinov, S., Gordon, G., Shaked, T., &amp; Degani, A. <a href="https://www.researchgate.net/publication/370735851_Os-Breeze_Oil_Spills_Boundary_Red_Emission_Zone_Estimation_Using_Unmanned_Aerial_Vehicles">Os-Breeze: Oil Spills Boundary Red Emission Zone Estimation Using Unmanned Aerial Vehicles</a>. <i>Available at SSRN 4446613</i>.</span></li>
+<li><span id="bar2023toward">Bar-Sinai, K. L., Shaked, T., Fettahoglu, E. S., Krimm, J., Pestriakova, E., Kniazeva, L., Friedberg, S., &amp; Boucsein, B. (2023). <a href="https://www.researchgate.net/publication/370980617_Toward_Acoustic_Landscapes_A_Digital_Design_Workflow_for_Embedding_Noise_Reduction_in_Ground-forming">Toward Acoustic Landscapes: A Digital Design Workflow for Embedding Noise Reduction in Ground-forming</a>. <i>JoDLA–Journal of Digital Landscape Architecture</i>, <i>8</i>, 273–283.</span></li></ol>
+
+<h2 id="conference-papers">Conference Papers</h2>
+
+<ol class="bibliography"><li><span id="karmon2018knitit">Karmon, A., Sterman, Y., Shaked, T., Sheffer, E., &amp; Nir, S. (2018). <a href="https://www.researchgate.net/publication/325887522_KNITIT_a_computational_tool_for_design_simulation_and_fabrication_of_multiple_structured_knits">KNITIT: a computational tool for design, simulation, and fabrication of multiple structured knits</a>. <i>Proceedings of the 2nd Annual ACM Symposium on Computational Fabrication</i>, 1–10.</span></li>
+<li><span id="shaked2020autonomous">Shaked, T., Bar-Sinai, K. L., &amp; Sprecher, A. (2020). <a href="https://www.researchgate.net/publication/343382089_Autonomous_in_Craft_Embedding_Human_Sensibility_in_Architectural_Robotic_Fabrication">Autonomous in Craft: Embedding Human Sensibility in Architectural Robotic Fabrication</a>. <i>RE: Anthropocene, Design in the Age of Humans-Proceedings of the 25th CAADRIA Conference</i>, <i>2</i>, 243–252.</span></li></ol>
+
+<h2 id="book-chapters">Book Chapters</h2>
+
+<ol class="bibliography"><li><span id="shaked2019exercises">Shaked, T., &amp; Dubin, U. (2019). <a href="https://www.researchgate.net/publication/337945732_Exercises_in_Style_A_Transdisciplinary_Discussion">Exercises in style: a transdisciplinary discussion</a>. In <i>Instabilities and Potentialities</i> (pp. 194–202). Routledge.</span></li></ol>
+
+<h2 id="theses">Theses</h2>
+
+<ol class="bibliography"><li><span id="shaked2016non">Shaked, T. (2016). <i><a href="https://www.researchgate.net/publication/318528796_The_Non-Monumental_Monument_Holocaust_Commemoration_in_the_Digital_Age">The Non-Monumental Monument: Holocaust Commemoration in the Digital Age</a></i> [PhD thesis]. Tel Aviv University.</span></li></ol>
+
+<h2 id="patents">Patents</h2>
+
+<ol class="bibliography"><li><span id="pourati2021thin">Pourati, R., Larianovsky, P., Amnon, B.-T., Grobman, J., Shaked, T., Sprecher, A., Weissman, A., &amp; Masri, B. (2021). <i><a href="https://patents.google.com/patent/US20210308900A1/en?inventor=Ryan+POURATI">Thin shaped structural elements and novel method of making same</a></i>. Google Patents.</span></li>
+<li><span id="karmon2022tool">Karmon, A., Nir, S., Shaked, T., Sheffer, E., &amp; Sterman, Y. (2022). <i><a href="https://patents.google.com/patent/US11421355B2/en">Tool for design and fabrication of knitted components</a></i>.</span></li>
+<li><span id="sprecher2022device">Sprecher, A., &amp; Shaked, T. (2022). <i><a href="https://patents.google.com/patent/US20220040884A1/en">Device and method for adaptive robotic stone surfacing</a></i>.</span></li></ol>
+</div>
+              </div>
+        </div>
+    </div>
+  </div>
+
+
+</div>
+
+
+  <div class="footer">
+  <div class="container">
+    <div class="row">
+
+        <div class="col-12 col-md-4">
+          <div class="footer-info">
+            
+              <h2>ARCA Lab</h2>
+            
+
+            
+              <p>Advanced Robotics for Construction and Architecture.</p>
+            
+          </div>
+
+          
+              
+
+<div class="social" id="social">
+  
+  <a href="https://github.com/tomshaked" target="blank" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+  
+  <a href="https://www.instagram.com/tomshaked/" target="blank" title="Instagram">
+    <i class="fab fa-instagram-square"></i>
+  </a>
+  
+  <a href="https://www.linkedin.com/in/tomshaked/" target="blank" title="Linkedin">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  
+</div>
+
+
+          
+        </div>
+
+        <div class="col-12 col-md-8 mt-gutter mt-md-0">
+          <div class="row justify-content-end">
+
+            
+
+            
+
+            
+        
+          </div>
+        </div>
+      
+    </div>
+    
+    <div class="row justify-content-end mt-2">
+      <div class="col-12 col-md-4">
+        <h3>Contact Us</h3>
+        
+
+<div class="contact">
+  
+    <div class="contact-email">
+      <strong>Email:</strong>
+      <a href="mailto:tomsha@ariel.ac.il">tomsha@ariel.ac.il</a>
+    </div>
+  
+  
+    <div class="contact-phone">
+      <strong>Phone:</strong>
+      +972 54 4502070</div>
+  
+  
+  
+    <div class="contact-address">
+      <strong>Address:</strong>
+      Building 55, School of Architecture, Ariel University 
+    </div>
+  
+</div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+
+  <div class="bottom">
+  <div class="container relative">
+    <div class="row align-items-center justify-content-between">
+      <div class="col-auto">
+       
+        
+          <div class="menu-bottom">
+  <ul>
+    
+      <li class="menu-item-Privacy Policy">
+        <a href="/privacy-policy/">Privacy Policy</a>
+      </li>
+    
+      <li class="menu-item-Terms and Conditions">
+        <a href="/terms-and-conditions/">Terms and Conditions</a>
+      </li>
+    
+  </ul>
+</div>
+        
+        
+          <a href="#" data-cc="c-settings">Cookies</a>
+        
+        
+          <div class="copyright">© 2023 Zerostatic Themes</div>
+        
+        
+        
+          <a class="feed" href="https://arcalab.info/feed.xml">
+            <i class="fas fa-feed"></i>
+          </a>
+        
+        
+      </div>
+      
+        <div class="col-auto">
+          <div class="dark-mode-switcher " id="dark-mode-container">
+  <div class="dark-mode-switch">
+    <svg class="dark-mode-icon-dark" data-name="Layer 1" fill="#000000" height="20px" viewbox="0 0 64 64" width="20px" x="0px" xmlns="http://www.w3.org/2000/svg" y="0px">
+      <title>essential</title>
+      <path d="M33.28,58.24A26.95,26.95,0,0,1,24,6l.39-.13a2,2,0,0,1,2.4,2.87,22.42,22.42,0,0,0-1.51,18.75h0A22.47,22.47,0,0,0,54.09,40.8l.76-.3a2,2,0,0,1,2.24.48,2,2,0,0,1,.35,2.24,27,27,0,0,1-24.16,15ZM21.11,11.85a22.94,22.94,0,1,0,30,33.91A26.46,26.46,0,0,1,21.53,28.87h0A26.4,26.4,0,0,1,21.11,11.85Z"></path>
+    </svg>
+    <svg class="dark-mode-icon-light" fill="#000000" height="20px" style="enable-background: new 0 0 100 100;" version="1.1" viewbox="0 0 100 100" width="20px" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+      <g>
+        <path d="M50,75c-13.8,0-25-11.2-25-25s11.2-25,25-25s25,11.2,25,25S63.8,75,50,75z M50,33.3c-9.2,0-16.7,7.5-16.7,16.7   c0,9.2,7.5,16.7,16.7,16.7c9.2,0,16.7-7.5,16.7-16.7C66.7,40.8,59.2,33.3,50,33.3z"></path>
+      </g>
+      <g>
+        <path d="M50,100c-2.3,0-4.2-1.9-4.2-4.2v-8.3c0-2.3,1.9-4.2,4.2-4.2c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,98.1,52.3,100,50,100z    M17.5,86.7c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8   C19.6,86.3,18.6,86.7,17.5,86.7z M82.5,86.7c-1.1,0-2.1-0.4-2.9-1.2l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9s4.3-1.6,5.9,0l5.8,5.8   c1.6,1.6,1.6,4.3,0,5.9C84.6,86.3,83.6,86.7,82.5,86.7z M95.8,54.2h-8.3c-2.3,0-4.2-1.9-4.2-4.2c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C100,52.3,98.1,54.2,95.8,54.2z M12.5,54.2H4.2C1.9,54.2,0,52.3,0,50c0-2.3,1.9-4.2,4.2-4.2h8.3   c2.3,0,4.2,1.9,4.2,4.2C16.7,52.3,14.8,54.2,12.5,54.2z M76.7,27.5c-1.1,0-2.1-0.4-2.9-1.2c-1.6-1.6-1.6-4.3,0-5.9l5.8-5.8   c1.6-1.6,4.3-1.6,5.9,0c1.6,1.6,1.6,4.3,0,5.9l-5.8,5.8C78.8,27.1,77.7,27.5,76.7,27.5z M23.3,27.5c-1.1,0-2.1-0.4-2.9-1.2   l-5.8-5.8c-1.6-1.6-1.6-4.3,0-5.9c1.6-1.6,4.3-1.6,5.9,0l5.8,5.8c1.6,1.6,1.6,4.3,0,5.9C25.5,27.1,24.4,27.5,23.3,27.5z M50,16.7   c-2.3,0-4.2-1.9-4.2-4.2V4.2C45.8,1.9,47.7,0,50,0c2.3,0,4.2,1.9,4.2,4.2v8.3C54.2,14.8,52.3,16.7,50,16.7z"></path>
+      </g>
+    </svg>
+    <div class="ball"></div>
+  </div>
+</div>
+        </div>
+         
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src="/assets/js/scripts.js"></script>
+
+<script type="text/javascript" src="/assets/js/hamburger.js"></script>
+<script type="text/javascript" src="/assets/js/darkModeSwitch.js"></script>
+
+
+
+
+
+</body>
+</html>
