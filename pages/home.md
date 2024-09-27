@@ -1,19 +1,21 @@
 ---
 layout: home
 permalink: "/"
-title: "Jekyll Advance"
-description: "Advance is a multi-purpose premium Jekyll theme. Modern design, clean code and highly configurable."
+title: "ARCA Lab"
+description: "Architectural Robotics and Construction Automation Lab."
 header_transparent: true
-meta_title: Jekyll Advance - Premium Jekyll Theme
+meta_title: ARCA Lab - Architectural Robotics and Construction Automation Lab
 
 hero:
   enabled: true
-  heading: "Jekyll Advance"
-  sub_heading: "Built using highly configurable sections, Advance is a multi-purpose premium Jekyll theme. Modern design, clean code and highly configurable."
+  heading: "Architectural Robotics and Construction Automation Lab."
+  sub_heading: ""
   text_color: "#FFFFFF"
   background_color: "#1d2830"
   background_gradient: true
-  background_image: "/assets/images/gen/home/home-1-large.webp"
+  # background_image: "/assets/images/gen/home/home-1-large.webp"
+  # background_image: "/assets/images/gen/content/5b.jpg" # this image should be a snapshot of the first frame of the hero-video 
+  background_image: "assets/videos/2.gif"
   background_image_blend_mode: overlay # "overlay", "multiply", "screen"
   fullscreen_mobile: true
   fullscreen_desktop: false
@@ -37,7 +39,7 @@ hero:
         style: "light"
 
 services:
-  enabled: true
+  enabled: false
   heading: "Our Services"
   sub_heading: ""
   limit: 6
@@ -49,19 +51,20 @@ services:
 intro:
   enabled: true
   align: left
-  image: "/assets/images/gen/content/content-5-thumbnail.webp"
-  heading: "We've helped hundreds of people grow their business online."
-  sub_heading: "Our software empowers customers and retailers to work from anywhere in the world, on the go, or at home."
+  # image: "/assets/images/gen/content/content-5-thumbnail.webp"
+  image: "/assets/images/gen/content/5b.jpg"
+  heading: "Pushing the boundaries of robotics in construction and architecture."
+  sub_heading: "Our mission is to advance knowledge, innovation, and sustainability within the built environment. <br>Our research includes:"
   features:
-    enabled: false
+    enabled: true
     list:
-      - text: "Configure the homepage sections in front-matter."
+      - text: "Collective robotic construction."
         fa_icon: "fas fa-check"
-      - text: "An advanced hero image section with dozens of design options."
+      - text: "On-site robotic manufacturing."
         fa_icon: "fas fa-check"
-      - text: "Fully responsive and SEO optimised."
+      - text: "Autonomous robots in unstructured environments."
         fa_icon: "fas fa-check"
-      - text: "Multiple content types including services, projects, blog and more."
+      - text: "Human-robot collaboration for augmented building."
         fa_icon: "fas fa-check"
   buttons:
     enabled: true
@@ -73,11 +76,6 @@ intro:
         size: large
         outline: false
         style: "primary"
-
-partners:
-  enabled: true
-  limit: 5
-  sort: "weight" # 'date'
 
 projects:
   enabled: true
@@ -94,12 +92,12 @@ outro:
   enabled: true
   align: center
   image: false
-  heading: Get Started Today
-  sub_heading: "Save time and money using this premium Jekyll theme."
+  heading: Explore Research Opportunities
+  sub_heading: "Join us in pioneering research and collaboration."
   features:
     enabled: false
     list:
-      - text: "Free Quote"
+      - text: "Contact Us"
         fa_icon: "fas fa-envelope-open-text"
   buttons:
     enabled: true
@@ -109,8 +107,16 @@ outro:
         external: false
         size: "large"
 
-posts:
+partners:
   enabled: true
+  align: center
+  heading: "Our Partners"
+  # sub_heading: "Collaborating for Scientific Breakthroughs"
+  limit: 5
+  sort: "weight" # 'date'
+
+posts:
+  enabled: false
   heading: "Latest Posts"
   sub_heading: ""
   limit: 3

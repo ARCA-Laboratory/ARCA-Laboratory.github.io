@@ -1,32 +1,54 @@
 [
   {
-    "title": "Jekyll",
-    "image": "assets/images/partners/jekyll-mark.png",
-    "url": "https://www.zerostatic.io"
+    "title": "TUM Professorship of Urban Design ",
+    "image": "assets/images/partners/tum-logo.png",
+    "url": "https://www.arc.ed.tum.de/en/ud/urban-design/"
   },
   {
-    "title": "Netlify",
-    "image": "assets/images/partners/netlify.png",
-    "url": "https://www.zerostatic.io"
+    "title": "CEAR Technion",
+    "image": "assets/images/partners/cear-logo.png",
+    "url": "https://cear.net.technion.ac.il"
   },
   {
-    "title": "Scss",
-    "image": "assets/images/partners/sass.png",
-    "url": "https://www.zerostatic.io"
+    "title": "MTRL Technion",
+    "image": "assets/images/partners/mtrl-logo.png",
+    "url": "https://mtrl.net.technion.ac.il/"
   },
   {
-    "title": "Mailchimp",
-    "image": "assets/images/partners/mailchimp.svg",
-    "url": "https://www.zerostatic.io"
-  },
-  {
-    "title": "Github",
-    "image": "assets/images/partners/github.svg",
-    "url": "https://www.zerostatic.io"
-  },
-  {
-    "title": "Algolia",
-    "image": "assets/images/partners/algolia.svg",
-    "url": "https://www.zerostatic.io"
+    "title": "CMU Biorobotics Lab",
+    "image": "assets/images/partners/cmu-biorobotics-lab-logo.png",
+    "url": "http://biorobotics.ri.cmu.edu/index.php"
   }
 ]
+// [
+//   {
+//     "title": "Jekyll",
+//     "image": "assets/images/partners/jekyll-mark.png",
+//     "url": "https://www.zerostatic.io"
+//   },
+//   {
+//     "title": "Netlify",
+//     "image": "assets/images/partners/netlify.png",
+//     "url": "https://www.zerostatic.io"
+//   },
+//   {
+//     "title": "Scss",
+//     "image": "assets/images/partners/sass.png",
+//     "url": "https://www.zerostatic.io"
+//   },
+//   {
+//     "title": "Mailchimp",
+//     "image": "assets/images/partners/mailchimp.svg",
+//     "url": "https://www.zerostatic.io"
+//   },
+//   {
+//     "title": "Github",
+//     "image": "assets/images/partners/github.svg",
+//     "url": "https://www.zerostatic.io"
+//   },
+//   {
+//     "title": "Algolia",
+//     "image": "assets/images/partners/algolia.svg",
+//     "url": "https://www.zerostatic.io"
+//   }
+// ]

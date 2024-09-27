@@ -17,8 +17,9 @@
       margin-right: 4px;
     }
     .logo-text {
+      font-weight: bold;
       font-size: 26px;
-      font-weight: 500;
+      // font-weight: 500;
       font-family: $font-family-logo;
       color: var(--color-logo-text);
       a {
