@@ -1,9 +1,9 @@
 source "https://rubygems.org"
 
-gem 'jekyll-environment-variables'
-gem 'jekyll-paginate'
-gem "webrick", "~> 1.7"
-gem "jekyll", "~> 4.3"
+ruby '3.3.5' # Ensure this matches your current Ruby version
 
-## comment to deploy
-gem 'jekyll-scholar', group: :jekyll_plugins
+gem 'jekyll-environment-variables', '~> 1.0'
+gem 'jekyll-paginate', '~> 1.1'
+gem 'webrick', '~> 1.7'
+gem 'jekyll', '~> 4.3.4'
+gem 'rouge', '~> 4.1'

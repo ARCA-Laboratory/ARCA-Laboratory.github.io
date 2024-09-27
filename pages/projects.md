@@ -2,18 +2,18 @@
 layout: list
 collection: "projects"
 title: Projects
-description: "A selection of our research projects."
+description: "A selection of our work and projects."
 permalink: "/projects/"
 header_transparent: true
 
 hero:
   enabled: true
   heading: "Projects"
-  sub_heading: "A selection of our research projects."
+  sub_heading: "Our portfolio of work and projects."
   text_color: "#FFFFFF"
   background_color: false
   background_gradient: true
-  background_image: "/assets/images/gen/projects/WhatsApp Image 2019-12-11 at 15.35.52(1).jpeg"
+  background_image: "/assets/images/gen/home/home-2-large.webp"
   background_image_blend_mode: overlay # "overlay", "multiply", "screen"
   fullscreen_mobile: false
   fullscreen_desktop: false
@@ -61,13 +61,16 @@ outro:
   enabled: true
   align: left
   image: false
-  heading: "Explore Research Opportunities"
-  sub_heading: "Join us in pioneering research and collaboration."
+  heading: "Ready to get started?"
+  sub_heading: "Contact us today for a free quote!"
   buttons:
     enabled: true
     list:
-      - text: "Contact Us"
+      - text: "Get A Quote"
         url: "/contact"
         external: false
-        size: "large"
+        fa_icon: false
+        size: "normal"
+        outline: false
+        style: "primary"
 ---

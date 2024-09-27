@@ -2,57 +2,43 @@ main:
   - name: Home
     url: /
     weight: 1
-  # - name: Services
-  #   url: /services/
-  #   weight: 1
-  #   child:
-  #     - name: "Web Development"
-  #       url: /services/web-development/
-  #     - name: "UX"
-  #       url: /services/user-experience/
-  #     - name: "Branding"
-  #       url: /services/branding/
-  #     - name: "Web Design"
-  #       url: /services/web-design/
-  #     - name: "SEO"
-  #       url: /services/seo/
-  #     - name: "Software Engineering"
-  #       url: /services/software-engineering/
+  - name: Services
+    url: /services/
+    weight: 1
+    child:
+      - name: "Web Development"
+        url: /services/web-development/
+      - name: "UX"
+        url: /services/user-experience/
+      - name: "Branding"
+        url: /services/branding/
+      - name: "Web Design"
+        url: /services/web-design/
+      - name: "SEO"
+        url: /services/seo/
+      - name: "Software Engineering"
+        url: /services/software-engineering/
   - name: Projects
     url: /projects/
     weight: 2
     child:
-      - name: "Collective Robotic Site Preparation"
-        url: /projects/collective-robotic-site-preparation/
-      - name: "Eco-Friendly Robotic Additive Manufacturing"
-        url: /projects/robotic-additive-manufacturing/
-      - name: "Human-robot building craft transfer"
-        url: /projects/human-robot-building-craft-transfer/
-      # - name: "Book Design"
-      #   url: /projects/book-design/
-      # - name: "Special Edition"
-      #   url: /projects/special-edition/
-      # - name: "Master System"
-      #   url: /projects/master-system/
-      # - name: "Clothing Range"
-      #   url: /projects/clothing-range/
-  # - name: Blog
-  #   url: /blog/
-  - name: Publications
-    url: /publications/
+      - name: "Book Design"
+        url: /projects/book-design/
+      - name: "Special Edition"
+        url: /projects/special-edition/
+      - name: "Master System"
+        url: /projects/master-system/
+      - name: "Clothing Range"
+        url: /projects/clothing-range/
+  - name: Blog
+    url: /blog/
     weight: 4
   - name: About
     url: /about/
     weight: 5
-  - name: Team
-    url: /team/
-    weight: 5
-  - name: Contact
-    url: /contact/
-    weight: 5
-  # - name: Buy Now
-  #   url: https://www.zerostatic.io/theme/jekyll-advance/
-  #   weight: 6
+  - name: Buy Now
+    url: https://www.zerostatic.io/theme/jekyll-advance/
+    weight: 6
 footer_primary:
   - name: Home
     url: /

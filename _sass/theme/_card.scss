@@ -16,8 +16,7 @@
       aspect-ratio: 16 / 9;
       width: 100%;
       height: auto;
-      // object-fit: contain;
-      object-fit: cover;
+      object-fit: contain;
       &:hover {
         opacity: 0.8;
       }
@@ -66,7 +65,6 @@
     color: var(--color-base-bg-2);
   }
   .card-title {
-    // padding-left: 20px;
     margin-bottom: 10px;
     h3 {
       font-weight: 500;
