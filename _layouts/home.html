@@ -40,7 +40,7 @@ body_classes: page-home
   {% assign cards = cards | sort: 'weight' %}
 {% endif %}
 
-{% if page.services.enabled %}
+<!-- {% if page.services.enabled %}
   <div class="section bg-base-bg-2">
     <div class="container">
       <div class="row">
@@ -79,7 +79,7 @@ body_classes: page-home
     </div>
   </div>
 </div>
-{% endif %}
+{% endif %} -->
 
 {% if page.intro.enabled %}
   <div class="section">
@@ -94,26 +94,6 @@ body_classes: page-home
       %}
     </div>
   </div>
-{% endif %}
-
-
-{% if page.partners.enabled %}
-{% assign partners = site.data.partners %}
-{% assign partners_limit = page.partners.limit | default: 4 %}
-{% assign partners_sort = page.partners.sort | default: 'weight' %}
-{% if partners.size > 0 %}
-<div class="section pt-0 partners">
-  <div class="container">
-    <div class="row justify-content-center align-items-center">
-      {% for partner in partners limit: partners_limit %}
-      <div class="col-4 col-lg-2 text-center mb-1 mt-1">
-        <img src="{{ partner.image | relative_url }}" alt="{{ partner.title }}" />
-      </div>
-      {% endfor %}
-    </div>
-  </div>
-</div>
-{% endif %}
 {% endif %}
 
 
@@ -167,7 +147,6 @@ body_classes: page-home
 {% endif %}
 
 
-
 {% if page.outro.enabled %}
 <div class="section">
   <div class="container">
@@ -182,6 +161,32 @@ body_classes: page-home
   </div>
 </div>
 {% endif %}
+
+
+{% if page.partners.enabled %}
+{% assign partners = site.data.partners %}
+{% assign partners_limit = page.partners.limit | default: 4 %}
+{% assign partners_sort = page.partners.sort | default: 'weight' %}
+{% if partners.size > 0 %}
+<div class="section pt-0 partners">
+  <div class="container">
+    {% include framework/blocks/sections/info.html
+      heading=page.partners.heading
+      sub_heading=page.partners.sub_heading
+      align=page.partners.align
+      %}
+    <div class="row justify-content-center align-items-center" style="padding-top: 20px;">
+      {% for partner in partners limit: partners_limit %}
+      <div class="col-4 col-lg-2 text-center mb-1 mt-1">
+        <a href="{{partner.url}}"><img src="{{ partner.image | relative_url }}" alt="{{ partner.title }}" /></a>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+{% endif %}
+{% endif %}
+
 
 {% assign cards = site.posts | sort: 'date' | reverse %}
 {% assign limit = page.posts.limit | default: 2 %}

@@ -51,15 +51,15 @@ intro:
         size: normal
 
 outro:
-  enabled: false
+  enabled: true
   align: left
   image: false
-  heading: "Ready to get started?"
-  sub_heading: "Contact us today for a free quote!"
+  heading: "Interested in joining our lab?"
+  sub_heading: "Take the first step to become part of our amazing research team!"
   buttons:
     enabled: true
     list:
-      - text: "Get A Quote"
+      - text: "Contact Us"
         url: "/contact"
         external: false
         fa_icon: false

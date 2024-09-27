@@ -43,3 +43,23 @@ body_classes: page-basic
     </div>
   </div>
 {% endif %}
+
+{% if page.outro.enabled == true %}
+  <div class="section bg-base-bg-2 strip-border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          {% include framework/blocks/sections/info.html 
+            heading=page.outro.heading
+            sub_heading=page.outro.sub_heading
+            description=page.outro.description 
+            align=page.outro.align
+            buttons=page.outro.buttons
+            features=page.outro.features
+            image=page.outro.image 
+          %}
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}
