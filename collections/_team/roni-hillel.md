@@ -17,16 +17,16 @@ Roni's research focuses on robotic fabrication using local materials, where she 
 # Publications
 
 ## Journal Papers 
-{% bibliography --query @article{author=~"Hillel, Roni"} --file references %}
+{% bibliography --query '(@article{author:"Hillel, Roni"})' --file references %}
 
 ## Conference Papers
-{% bibliography --query @inproceedings{author=~"Hillel, Roni"} --file references %}
+{% bibliography --query '(@inproceedings{author:"Hillel, Roni"})' --file references %}
 
 ## Book Chapters
-{% bibliography --query @incollection{author=~"Hillel, Roni"} --file references %}
+{% bibliography --query '(@incollection{author:"Hillel, Roni"})' --file references %}
 
 ## Theses 
-{% bibliography --query @phdthesis{author=~"Hillel, Roni"} --file references %}
+{% bibliography --query '(@phdthesis{author:"Hillel, Roni"})' --file references %}
 
 ## Patents 
-{% bibliography --query @misc{author=~"Hillel, Roni"} --file references %}
+{% bibliography --query '(@misc{author:"Hillel, Roni"})' --file references %}
