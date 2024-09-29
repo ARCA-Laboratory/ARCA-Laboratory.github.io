@@ -2,13 +2,13 @@
 layout: home
 permalink: "/"
 title: "ARCA Lab"
-description: "Architectural Robotics and Construction Automation Laboratory"
+description: "Architectural Robotics and Construction Automation Lab"
 header_transparent: true
-meta_title: ARCA Lab - Architectural Robotics and Construction Automation Laboratory
+meta_title: ARCA Lab - Architectural Robotics and Construction Automation Lab
 
 hero:
   enabled: true
-  heading: "Architectural Robotics and Construction Automation Laboratory"
+  heading: "Architectural Robotics and Construction Automation Lab"
   sub_heading: ""
   text_color: "#FFFFFF"
   background_color: "#1d2830"
