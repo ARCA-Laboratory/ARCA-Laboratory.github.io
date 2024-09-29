@@ -56,15 +56,15 @@ intro:
   heading: "Pushing the boundaries of robotics in construction and architecture."
   sub_heading: "Our mission is to advance knowledge, innovation, and sustainability within the built environment. <br>Our research includes:"
   features:
-    enabled: true
+    enabled: tru
     list:
       - text: "Collective robotic construction"
-        fa_icon: "fas fa-robot" # Represents robotic collaboration
+      fa_icon: "fas fa-robot" # Represents robotic collaboration
       - text: "On-site robotic manufacturing"
         fa_icon: "fas fa-industry" # Represents on-site industrial processes
-      - text: "Robots in unstructured environments"
+      - text: "Autonomous robots in unstructured environments"
         fa_icon: "fas fa-map-signs" # Represents navigation in unstructured spaces
-      - text: "Human-robot collaboration"
+      - text: "Human-robot collaboration for augmented building"
         fa_icon: "fas fa-handshake" # Represents collaboration between humans and robots
   buttons:
     enabled: true
