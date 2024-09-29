@@ -13,3 +13,28 @@ links:
 ---
 
 Roni's research focuses on robotic fabrication using local materials, where she aims to contribute valuable insights to the field. Her commitment to advancing knowledge and innovation aligns perfectly with ARCA Lab's mission.
+
+# Publications
+
+## Journal Papers 
+
+{% bibliography --query 'author:Hillel' --file references %}
+
+## Conference Papers
+
+{% bibliography --query 'author:Hillel' --file references %}
+
+## Book Chapters
+
+{% bibliography --query 'author:Hillel' --file references %}
+
+## Theses 
+
+{% bibliography --query 'author:Hillel' --file references %}
+
+## Patents 
+
+{% bibliography --query 'author:Hillel' --file references %}
+
+
+
