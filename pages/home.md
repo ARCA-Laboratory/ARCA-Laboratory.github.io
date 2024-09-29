@@ -59,7 +59,7 @@ intro:
     enabled: tru
     list:
       - text: "Collective robotic construction"
-      fa_icon: "fas fa-robot" # Represents robotic collaboration
+        fa_icon: "fas fa-robot" # Represents robotic collaboration
       - text: "On-site robotic manufacturing"
         fa_icon: "fas fa-industry" # Represents on-site industrial processes
       - text: "Autonomous robots in unstructured environments"
