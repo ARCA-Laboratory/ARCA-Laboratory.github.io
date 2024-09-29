@@ -16,19 +16,7 @@ Roni's research focuses on robotic fabrication using local materials, where she 
 
 # Publications
 
-## Journal Papers 
-{% bibliography --query @article --file roni_references %}
-
 ## Conference Papers
 {% bibliography --query @inproceedings --file roni_references %}
-
-## Book Chapters
-{% bibliography --query @incollection --file roni_references %}
-
-## Theses 
-{% bibliography --query @phdthesis --file roni_references %}
-
-## Patents 
-{% bibliography --query @misc --file roni_references %}
 
 
