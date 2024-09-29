@@ -7,7 +7,7 @@
 # baseurl: "/arcalab"
 
 ## uncomment when buiding for arcalab.info domain
-url: "https://arcalab.info"
+url: "https://arcalaboratory.com"
 baseurl: ""
 
 permalink: pretty
