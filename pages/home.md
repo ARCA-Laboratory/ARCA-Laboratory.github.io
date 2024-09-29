@@ -58,13 +58,13 @@ intro:
   features:
     enabled: true
     list:
-      - text: "Collective robotic construction."
+      - text: "Collective robotic construction"
         fa_icon: "fas fa-robot" # Represents robotic collaboration
-      - text: "On-site robotic manufacturing."
+      - text: "On-site robotic manufacturing"
         fa_icon: "fas fa-industry" # Represents on-site industrial processes
-      - text: "Autonomous robots in unstructured environments."
+      - text: "Autonomous field robotics"
         fa_icon: "fas fa-map-signs" # Represents navigation in unstructured spaces
-      - text: "Human-robot collaboration for augmented building."
+      - text: "Human-robot collaboration"
         fa_icon: "fas fa-handshake" # Represents collaboration between humans and robots
   buttons:
     enabled: true
