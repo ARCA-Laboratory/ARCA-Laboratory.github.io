@@ -62,7 +62,7 @@ intro:
         fa_icon: "fas fa-robot" # Represents robotic collaboration
       - text: "On-site robotic manufacturing"
         fa_icon: "fas fa-industry" # Represents on-site industrial processes
-      - text: "Autonomous field robotics"
+      - text: "Robots in unstructured environments"
         fa_icon: "fas fa-map-signs" # Represents navigation in unstructured spaces
       - text: "Human-robot collaboration"
         fa_icon: "fas fa-handshake" # Represents collaboration between humans and robots
