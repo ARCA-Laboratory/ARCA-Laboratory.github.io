@@ -15,7 +15,7 @@ hero:
   background_gradient: true
   # background_image: "/assets/images/gen/home/home-1-large.webp"
   # background_image: "/assets/images/gen/content/5b.jpg" # this image should be a snapshot of the first frame of the hero-video 
-  background_image: "assets/videos/2.gif"
+  background_image: "/assets/videos/2.gif"
   background_image_blend_mode: overlay # "overlay", "multiply", "screen"
   fullscreen_mobile: true
   fullscreen_desktop: false
